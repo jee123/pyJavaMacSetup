@@ -1,0 +1,30 @@
+#https://medium.com/@henriquebastos/the-definitive-guide-to-setup-my-python-workspace-628d68552e14
+brew install pyenv
+brew install pyenv-virtualenv
+#assuming that we have python 3.7.3 and 2.7.14 installed.
+pyenv virtualenv 3.6.0 jupyter3
+pyenv virtualenv 3.6.0 tools3
+pyenv virtualenv 2.7.13 ipython2
+pyenv virtualenv 2.7.13 tools2
+pyenv activate jupyter3
+pip install jupyter
+python -m ipykernel install --user
+pyenv deactivate
+pyenv activate ipython2
+pip install ipykernel
+python -m ipykernel install --user
+pyenv deactivate
+pyenv activate tools3
+pip install youtube-dl gnucash-to-beancount rows
+pyenv deactivat
+pyenv activate tools2
+pip install rename s3cmd fabric mercurial
+pyenv deactivate
+pyenv global 3.6.0 2.7.13 jupyter3 ipython2 tools3 tools2
+pyenv which python
+pyenv which python2
+pyenv which jupyter
+pyenv which ipython
+pyenv which ipython2
+pyenv which youtube-dl
+pyenv which rename
