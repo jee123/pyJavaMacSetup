@@ -1,1 +1,1 @@
-pip install nltk pandas matplotlib seaborn 
+pip install nltk pandas matplotlib seaborn scikit-learn scipy
