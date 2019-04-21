@@ -1,1 +1,1 @@
-pip install --upgrade nltk pandas matplotlib seaborn scikit-learn scipy tensorflow keras future
+pip install --upgrade nltk pandas matplotlib seaborn scikit-learn scipy tensorflow keras future tokenizer
