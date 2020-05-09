@@ -1,0 +1,4 @@
+cd $HOME_DIR_FOR_PROJECT
+virtualenv --python=/Users/tjee/.pyenv/shims/python3.7 v3p
+source v3p/bin/activate
+jupyter-notebook. 
